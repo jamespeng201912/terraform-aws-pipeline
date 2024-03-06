@@ -1,3 +1,13 @@
+#  Configure the terraform backend to store the terraform state
+terraform {
+  backend "s3" {
+    bucket = "platform-engineering-terraform-states"
+    key    = "terraform/all-state/data-streaming-platform.tfstate"
+    region = "ap-northeast-1"
+    encrypt = true
+  }
+}
+
 provider "aws" {
   region  = "ap-northeast-1"
 }
