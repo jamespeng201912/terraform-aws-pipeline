@@ -17,6 +17,6 @@ resource "aws_instance" "helloworld" {
   instance_type = "t2.micro"
   key_name= "aws-key-tokyo-james"
   tags = {
-    Name = "James-first-ec2"
+    Name = "6666666666666666666"
   }
 }
